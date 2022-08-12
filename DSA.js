@@ -60,6 +60,13 @@ function isAnagram(string1, string2) {
     count[letter] = (count[letter] || 0) + 1;
     console.log(count[letter]);
   }
+  for (let items of string2) {
+    if (!count[items]) {
+      return false;
+    }
+    count[items] -= 1;
+  }
+  return true;
 }
 const check = isAnagram("awesome", "someewa");
 console.log(check);
