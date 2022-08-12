@@ -44,4 +44,24 @@ Checking String Anagram - Problem 2
 "hello" -> "lolhe"
 */
 
+// Condition
+// 1. length check (for both strings)
+// 2. String "awesome"
+// 3. output -> {a:0, w:0, e:0, s:0, o:0, m:0, e:0}
+
 // Solution - 1
+
+function isAnagram(string1, string2) {
+  if (string1.length !== string2.length) {
+    return false;
+  }
+  let count = {};
+  for (let letter of string1) {
+    count[letter] = (count[letter] || 0) + 1;
+    console.log(count[letter]);
+  }
+}
+const check = isAnagram("awesome", "someewa");
+console.log(check);
+
+// linear time complexity o(n)
