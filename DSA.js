@@ -36,3 +36,12 @@ Checking sum zero - Problem 1
 // }
 // const result = findSumPairZero([-5, -4, -3, -2, 0, 2, 4, 6, 8]);
 // console.log(result);
+
+/*
+Checking String Anagram - Problem 2
+"awesome" -> "someewa"
+"wow" -> "wwo"
+"hello" -> "lolhe"
+*/
+
+// Solution - 1
