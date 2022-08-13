@@ -72,3 +72,9 @@ Checking String Anagram - Problem 2
 // console.log(check);
 
 // linear time complexity o(n)
+
+/*
+Count Unique Number - Problem 3
+input -> array = [1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9, 9, 10]
+output -> 10
+*/
