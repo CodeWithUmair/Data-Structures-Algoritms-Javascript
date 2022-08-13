@@ -88,23 +88,23 @@ output -> 10
 
 // Solution - 1
 
-function uniqueNumber(arr) {
-  if (arr.length) {
-    let i = 0;
-    for (let j = 1; j < arr.length; j++) {
-      if (arr[i] !== arr[j]) {
-        i++;
-        arr[i] = arr[j];
-      }
-    }
-    return i + 1;
-  } else {
-    throw new Error(`Array is empty`);
-  }
-}
-const result = uniqueNumber([
-  1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9, 9, 10,
-]);
-console.log(result);
+// function uniqueNumber(arr) {
+//   if (arr.length) {
+//     let i = 0;
+//     for (let j = 1; j < arr.length; j++) {
+//       if (arr[i] !== arr[j]) {
+//         i++;
+//         arr[i] = arr[j];
+//       }
+//     }
+//     return i + 1;
+//   } else {
+//     throw new Error(`Array is empty`);
+//   }
+// }
+// const result = uniqueNumber([
+//   1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9, 9, 10,
+// ]);
+// console.log(result);
 
 // o(n) linear time complexity
