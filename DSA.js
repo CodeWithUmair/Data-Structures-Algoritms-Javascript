@@ -75,6 +75,36 @@ Checking String Anagram - Problem 2
 
 /*
 Count Unique Number - Problem 3
+                  i, j
 input -> array = [1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9, 9, 10]
 output -> 10
 */
+
+// Condition;
+// 1. i=0 , j=1
+// 2. arr[i] !== arr[j]
+// 3. i++
+// 4. arr[i] = arr[j]
+
+// Solution - 1
+
+function uniqueNumber(arr) {
+  if (arr.length) {
+    let i = 0;
+    for (let j = 1; j < arr.length; j++) {
+      if (arr[i] !== arr[j]) {
+        i++;
+        arr[i] = arr[j];
+      }
+    }
+    return i + 1;
+  } else {
+    throw new Error(`Array is empty`);
+  }
+}
+const result = uniqueNumber([
+  1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9, 9, 10,
+]);
+console.log(result);
+
+// o(n) linear time complexity
