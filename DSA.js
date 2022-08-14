@@ -157,4 +157,38 @@ Find the index of given no in a sorted arr 11
 // 1. min=0, element=1
 // 2. max=arr.length-1, element=15
 // 3. minindex=(min+max)/2 => (0+14)/2 => 7(index), element =8
-// 4.
+// 4. if arr(minIndex) < number(7)
+// 5. min = minIndex + 1;
+// 6. else if arr(minIndex) > number
+// 7. max = minIndex - 1, min=0, max=6     {1, 2, 3, 4, 5, 6, 7}
+// 8. (min + max)/2 => 3
+// 9. index+1 => 4(min), max=6 {5,6,7}
+// 10. (min + max)/2 => 5+1 => 6(min) , max=6
+// 11. (min + max)/2 => 6
+// 12. else minIndex => 6 , element =7
+
+// Solution - 1
+
+// function searchIndex(arr, num) {
+//   let min = 0;
+//   let max = arr.length - 1;
+//   while (min <= max) {
+//     let midIndex = Math.floor((min + max) / 2);
+//     console.log(`midIndex ${midIndex} min ${min} max ${max}`);
+//     if (arr[midIndex] < num) {
+//       min = midIndex + 1;
+//     } else if (arr[midIndex] > num) {
+//       max = midIndex - 1;
+//     } else {
+//       return midIndex;
+//     }
+//   }
+//   return -1;
+// }
+// const result = searchIndex(
+//   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+//   13
+// );
+// console.log("result", result);
+
+// time complexity is binary O(log(n))
