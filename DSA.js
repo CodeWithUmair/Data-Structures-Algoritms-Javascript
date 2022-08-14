@@ -99,7 +99,7 @@ output -> 10
 //     }
 //     return i + 1;
 //   } else {
-//     throw new Error(`Array is empty`);
+//     throw new Error(Array is empty);
 //   }
 // }
 // const result = uniqueNumber([
@@ -115,3 +115,29 @@ Count largest number of consecutive digits
 num = 4
 sum => 25
 */
+
+// Conditions
+// 1. num > arr => err
+// 2. 10 - 3 + 1
+
+// Solution - 1
+
+function largestConsecutiveNumber(arr, num) {
+  if (num > arr) {
+    throw new Error("Number is not greater than array");
+  } else {
+    let max = 0;
+    for (let i = 0; i < arr.length - num + 1; i++) {
+      let x = 0;
+      for (let j = 0; j < num; j++) {
+        x += arr[i + j];
+      }
+      if (x > max) {
+        max = x;
+      }
+    }
+    return max;
+  }
+}
+const result = largestConsecutiveNumber([1, 2, 3, 5, 3, 6, 4, 7, 8, 6], 3);
+console.log("result", result);
