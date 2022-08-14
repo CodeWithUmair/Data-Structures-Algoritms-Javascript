@@ -205,21 +205,27 @@ arr1 = [1, 2, 3, 4, 5], arr2 = [1, 4, 9, 16, 25]
 
 // Solution - 1
 
-function isSquareCheck(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    let isSquare = false;
-    for (let j = 0; j < arr2.length; j++) {
-      if (arr1[i] * arr1[i] === arr2[j]) {
-        isSquare = true;
-      }
-      if (j === arr2.length - 1) {
-        if (!isSquare) {
-          return false;
-        }
-      }
-    }
-  }
-  return true;
-}
-const result = isSquareCheck([1, 2, 3, 3, 3, 3, 2, 4, 4, 5], [1, 4, 9, 16, 25]);
-console.log("result", result);
+// function isSquareCheck(arr1, arr2) {
+//   for (let i = 0; i < arr1.length; i++) {
+//     let isSquare = false;
+//     for (let j = 0; j < arr2.length; j++) {
+//       if (arr1[i] * arr1[i] === arr2[j]) {
+//         isSquare = true;
+//       }
+//       if (j === arr2.length - 1) {
+//         if (!isSquare) {
+//           return false;
+//         }
+//       }
+//     }
+//   }
+//   return true;
+// }
+// const result = isSquareCheck([1, 2, 3, 3, 3, 3, 2, 4, 4, 5], [1, 4, 9, 16, 25]);
+// console.log("result", result);
+
+// time complexity quadratic O(n*2)
+
+// Solution - 2 (Optimized)
+
+// function
