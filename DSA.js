@@ -192,3 +192,13 @@ Find the index of given no in a sorted arr 11
 // console.log("result", result);
 
 // time complexity is binary O(log(n))
+
+/*
+Problem - 6
+Checking Squra in Another Array
+arr1 = [1, 2, 3, 4, 5], arr2 = [1, 4, 9, 16, 25]
+*/
+
+// Condition
+// 1. if (arr[i] * arr[i] === arr[j])
+// 2. let isSquare = true
