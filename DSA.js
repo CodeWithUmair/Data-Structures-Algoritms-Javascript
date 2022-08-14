@@ -148,8 +148,13 @@ sum => 25
 
 /*
 Problem - 5
-Count largest number of consecutive digits
-[1, 2, 3, 5, 3, 6, 4, 7, 8, 4] = total elements - 10
-num = 4
-sum => 25
+Divide & Conquere Technique
+Find the index of given no in a sorted arr 11
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] => index 10 output
 */
+
+// Condition
+// 1. min=0, element=1
+// 2. max=arr.length-1, element=15
+// 3. minindex=(min+max)/2 => (0+14)/2 => 7(index), element =8
+// 4.
