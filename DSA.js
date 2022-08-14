@@ -62,11 +62,11 @@ Checking String Anagram
 //     count[letter] = (count[letter] || 0) + 1;
 //     console.log(count[letter]);
 //   }
-//   for (let items of string2) {
-//     if (!count[items]) {
+//   for (let item1s of string2) {
+//     if (!count[item1s]) {
 //       return false;
 //     }
-//     count[items] -= 1;
+//     count[item1s] -= 1;
 //   }
 //   return true;
 // }
@@ -238,8 +238,24 @@ arr1 = [1, 2, 3, 4, 5], arr2 = [1, 4, 9, 16, 25]
 function checkSquare(arr1, arr2) {
   let map1 = {};
   let map2 = {};
-  for (item of arr1) {
-    map1[item] = map1[item];
+  for (item1 of arr1) {
+    map1[item1] = (map1[item1] || 0) + 1;
   }
-  console.log(item);
+  console.log("map1", map1);
+  for (item2 of arr2) {
+    map2[item2] = (map2[item2] || 0) + 1;
+  }
+  console.log("map2", map2);
+  for (let key in map1) {
+    console.log("Key", key);
+    if (!map2[key * key]) {
+      return false;
+    }
+    if (map1[key] !== map2[key * key]) {
+      return false;
+    }
+  }
+  return true;
 }
+const result = checkSquare([1, 2, 4, 2], [1, 4, 4, 16]);
+console.log("result", result);
