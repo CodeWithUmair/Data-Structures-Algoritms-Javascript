@@ -1,5 +1,6 @@
 /*
-Checking sum zero - Problem 1 
+Problem - 1
+Checking sum zero 
 [-5,-4,-3,-2,0,2,4,6,8] -> input
 [-4, 4] -> output
 */
@@ -38,7 +39,8 @@ Checking sum zero - Problem 1
 // console.log(result);
 
 /*
-Checking String Anagram - Problem 2
+Problem - 2
+Checking String Anagram
 "awesome" -> "someewa"
 "wow" -> "wwo"
 "hello" -> "lolhe"
@@ -74,7 +76,8 @@ Checking String Anagram - Problem 2
 // linear time complexity o(n)
 
 /*
-Count Unique Number - Problem 3
+Problem - 3
+Count Unique Number
                   i, j
 input -> array = [1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9, 9, 10]
 output -> 10
@@ -110,6 +113,7 @@ output -> 10
 // o(n) linear time complexity
 
 /*
+Problem - 4
 Count largest number of consecutive digits
 [1, 2, 3, 5, 3, 6, 4, 7, 8, 4] = total elements - 10
 num = 4
@@ -122,22 +126,30 @@ sum => 25
 
 // Solution - 1
 
-function largestConsecutiveNumber(arr, num) {
-  if (num > arr) {
-    throw new Error("Number is not greater than array");
-  } else {
-    let max = 0;
-    for (let i = 0; i < arr.length - num + 1; i++) {
-      let x = 0;
-      for (let j = 0; j < num; j++) {
-        x += arr[i + j];
-      }
-      if (x > max) {
-        max = x;
-      }
-    }
-    return max;
-  }
-}
-const result = largestConsecutiveNumber([1, 2, 3, 5, 3, 6, 4, 7, 8, 6], 3);
-console.log("result", result);
+// function largestConsecutiveNumber(arr, num) {
+//   if (num > arr) {
+//     throw new Error("Number is not greater than array");
+//   } else {
+//     let max = 0;
+//     for (let i = 0; i < arr.length - num + 1; i++) {
+//       let x = 0;
+//       for (let j = 0; j < num; j++) {
+//         x += arr[i + j];
+//       }
+//       if (x > max) {
+//         max = x;
+//       }
+//     }
+//     return max;
+//   }
+// }
+// const result = largestConsecutiveNumber([1, 2, 3, 5, 3, 6, 4, 7, 8, 6], 3);
+// console.log("result", result);
+
+/*
+Problem - 5
+Count largest number of consecutive digits
+[1, 2, 3, 5, 3, 6, 4, 7, 8, 4] = total elements - 10
+num = 4
+sum => 25
+*/
