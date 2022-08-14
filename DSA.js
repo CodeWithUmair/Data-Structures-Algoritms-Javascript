@@ -226,6 +226,20 @@ arr1 = [1, 2, 3, 4, 5], arr2 = [1, 4, 9, 16, 25]
 
 // time complexity quadratic O(n*2)
 
+// Condition - 2
+//1. arr1 = [1, 2, 3, 4, 5], arr2 = [1, 4, 9, 16, 25] Case-1
+//2. arr1 = [1, 2, 4, 2], arr2 = [1, 4, 4, 16]        Case-2
+
+// map1={1:1, 2:2, 4:1}
+// map2={1:1, 4:2, 16:1}
+
 // Solution - 2 (Optimized)
 
-// function
+function checkSquare(arr1, arr2) {
+  let map1 = {};
+  let map2 = {};
+  for (item of arr1) {
+    map1[item] = map1[item];
+  }
+  console.log(item);
+}
