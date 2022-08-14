@@ -108,3 +108,10 @@ output -> 10
 // console.log(result);
 
 // o(n) linear time complexity
+
+/*
+Count largest number of consecutive digits
+[1, 2, 3, 5, 3, 6, 4, 7, 8, 4] = total elements - 10
+num = 4
+sum => 25
+*/
