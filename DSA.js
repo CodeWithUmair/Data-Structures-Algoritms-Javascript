@@ -299,31 +299,33 @@ Sorting using recursive function
 
 // Solution;
 
-let myArr = [2, 4, 5, 8, 6, 1, 3, 9, 7];
-let newList = [];
-let i = 0;
-let j = 1;
+// let myArr = [2, 4, 5, 8, 6, 1, 3, 9, 7];
+// let newList = [];
+// let i = 0;
+// let j = 1;
 
-function isSorted(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > arr[j]) {
-      return false;
-    }
-  }
-  return true;
-}
-function sortedCheck(arr) {
-  if (isSorted(arr)) {
-    newList = arr;
-    return;
-  } else if (arr[i] < arr[j]) {
-    i++;
-    j++;
-    isSorted(arr);
-  } else {
-    [arr[i], (arr[j] = arr[j]), arr[i]];
-    i = 0;
-    j = 1;
-    isSorted(arr);
-  }
-}
+// function isSorted(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[i + 1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// function sortedCheck(arr) {
+//   if (isSorted(arr)) {
+//     newList = arr;
+//     return;
+//   } else if (arr[i] < arr[j]) {
+//     i++;
+//     j++;
+//     sortedCheck(arr);
+//   } else {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     i = 0;
+//     j = 1;
+//     sortedCheck(arr);
+//   }
+// }
+// sortedCheck(myArr);
+// console.log(newList);
