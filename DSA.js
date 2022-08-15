@@ -329,3 +329,13 @@ Sorting using recursive function
 // }
 // sortedCheck(myArr);
 // console.log(newList);
+
+/*
+Data Structures & Algoritms (DSA) - 8
+
+Sorting using recursive function
+[2, 4, 5, 8, 6, 1, 3, 9, 7] default case
+[2, 4, 5, 6, 8, 1, 3, 9, 7] second case
+[2, 4, 5, 6, 1, 8, 3, 9, 7] third case
+[1, 2, 3, 4, 5, 6, 7, 8, 9] final case (output)
+*/
