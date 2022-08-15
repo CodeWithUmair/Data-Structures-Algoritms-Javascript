@@ -343,7 +343,11 @@ num%2!==0
 
 function findOdd(arr) {
   let result = [];
-  helperRecursiveFunc();
+  function helperRecursiveFunc(inputArr) {
+    console.log(`checking recursive function`);
+  }
+  helperRecursiveFunc(arr);
+  return result;
 }
 const res = findOdd([1, 3, 5, 7, 9]);
 console.log("result", res);
