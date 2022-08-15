@@ -331,7 +331,7 @@ Sorting using recursive function
 // console.log(newList);
 
 /*
-Data Structures & Algoritms (DSA) - 8
+Data Structures & Algoritms (DSA) - 9
 
 Sorting using recursive function
 [2, 4, 5, 8, 6, 1, 3, 9, 7] default case
