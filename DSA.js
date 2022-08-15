@@ -1,5 +1,6 @@
 /*
 Data Structures & Algoritms (DSA) - 1
+
 Checking sum zero 
 [-5,-4,-3,-2,0,2,4,6,8] -> input
 [-4, 4] -> output
@@ -40,6 +41,7 @@ Checking sum zero
 
 /*
 Data Structures & Algoritms (DSA) - 2
+
 Checking String Anagram
 "awesome" -> "someewa"
 "wow" -> "wwo"
@@ -77,6 +79,7 @@ Checking String Anagram
 
 /*
 Data Structures & Algoritms (DSA) - 3
+
 Count Unique Number
                   i, j
 input -> array = [1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9, 9, 10]
@@ -114,6 +117,7 @@ output -> 10
 
 /*
 Data Structures & Algoritms (DSA) - 4
+
 Count largest number of consecutive digits
 [1, 2, 3, 5, 3, 6, 4, 7, 8, 4] = total elements - 10
 num = 4
@@ -148,6 +152,7 @@ sum => 25
 
 /*
 Data Structures & Algoritms (DSA) - 5
+
 Divide & Conquere Technique
 Find the index of given no in a sorted arr 11
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] => index 10 output
@@ -195,6 +200,7 @@ Find the index of given no in a sorted arr 11
 
 /*
 Data Structures & Algoritms (DSA) - 6
+
 Checking Squra in Another Array
 arr1 = [1, 2, 3, 4, 5], arr2 = [1, 4, 9, 16, 25]
 */
@@ -264,7 +270,19 @@ arr1 = [1, 2, 3, 4, 5], arr2 = [1, 4, 9, 16, 25]
 
 /*
 Data Structures & Algoritms (DSA) - 7
+
 Recursion: When function call itself
 otherwise it will get called for infinite time
 if a function call itself then there must be an and point
 */
+
+let counter = 1;
+function recursionDemo(num) {
+  if (counter > num) {
+    return;
+  }
+  console.log(`Hello Umair Let's Count ${counter} times`);
+  counter++;
+  recursionDemo(num);
+}
+recursionDemo(5);
