@@ -276,13 +276,13 @@ otherwise it will get called for infinite time
 if a function call itself then there must be an and point
 */
 
-let counter = 1;
-function recursionDemo(num) {
-  if (counter > num) {
-    return;
-  }
-  console.log(`Hello Umair Let's Count ${counter} times`);
-  counter++;
-  recursionDemo(num);
-}
-recursionDemo(5);
+// let counter = 1;
+// function recursionDemo(num) {
+//   if (counter > num) {
+//     return;
+//   }
+//   console.log(`Hello Umair Let's Count ${counter} times`);
+//   counter++;
+//   recursionDemo(num);
+// }
+// recursionDemo(5); //calling function
