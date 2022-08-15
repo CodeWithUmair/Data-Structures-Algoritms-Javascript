@@ -291,6 +291,39 @@ if a function call itself then there must be an and point (!important)
 Data Structures & Algoritms (DSA) - 8
 
 Sorting using recursive function
-otherwise it will get called for infinite time
-if a function call itself then there must be an and point
+[2, 4, 5, 8, 6, 1, 3, 9, 7] default case
+[2, 4, 5, 6, 8, 1, 3, 9, 7] second case
+[2, 4, 5, 6, 1, 8, 3, 9, 7] third case
+[1, 2, 3, 4, 5, 6, 7, 8, 9] final case (output)
 */
+
+// Solution;
+
+let myArr = [2, 4, 5, 8, 6, 1, 3, 9, 7];
+let newList = [];
+let i = 0;
+let j = 1;
+
+function isSorted(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[j]) {
+      return false;
+    }
+  }
+  return true;
+}
+function sortedCheck(arr) {
+  if (isSorted(arr)) {
+    newList = arr;
+    return;
+  } else if (arr[i] < arr[j]) {
+    i++;
+    j++;
+    isSorted(arr);
+  } else {
+    [arr[i], (arr[j] = arr[j]), arr[i]];
+    i = 0;
+    j = 1;
+    isSorted(arr);
+  }
+}
