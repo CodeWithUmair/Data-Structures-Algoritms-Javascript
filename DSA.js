@@ -273,7 +273,7 @@ Data Structures & Algoritms (DSA) - 7
 
 Recursion: When function call itself
 otherwise it will get called for infinite time
-if a function call itself then there must be an and point
+if a function call itself then there must be an and point (!important)
 */
 
 // let counter = 1;
@@ -286,3 +286,11 @@ if a function call itself then there must be an and point
 //   recursionDemo(num);
 // }
 // recursionDemo(5); //calling function
+
+/*
+Data Structures & Algoritms (DSA) - 8
+
+Sorting using recursive function
+otherwise it will get called for infinite time
+if a function call itself then there must be an and point
+*/
