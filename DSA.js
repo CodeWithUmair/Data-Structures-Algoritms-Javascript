@@ -333,9 +333,17 @@ Sorting using recursive function
 /*
 Data Structures & Algoritms (DSA) - 9
 
-Sorting using recursive function
-[2, 4, 5, 8, 6, 1, 3, 9, 7] default case
-[2, 4, 5, 6, 8, 1, 3, 9, 7] second case
-[2, 4, 5, 6, 1, 8, 3, 9, 7] third case
-[1, 2, 3, 4, 5, 6, 7, 8, 9] final case (output)
+Helper Recursive Function
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] -> input
+[1, 3, 5, 7, 9] -> ouput
+num%2!==0
 */
+
+// Solution;
+
+function findOdd(arr) {
+  let result = [];
+  helperRecursiveFunc();
+}
+const res = findOdd([1, 3, 5, 7, 9]);
+console.log("result", res);
