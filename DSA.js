@@ -341,20 +341,20 @@ num%2!==0
 
 // Solution;
 
-function findOdd(arr) {
-  let result = [];
-  function helperRecursiveFunc(inputArr) {
-    console.log(`checking recursive function`);
-    if (inputArr.length === 0) {
-      return;
-    }
-    if (inputArr[0] % 2 !== 0) {
-      result.push(inputArr[0]);
-    }
-    helperRecursiveFunc(inputArr.slice(1));
-  }
-  helperRecursiveFunc(arr);
-  return result;
-}
-const res = findOdd([2, 4, 5, 7, 6, 8, 58, 59]);
-console.log("result", res);
+// function findOdd(arr) {
+//   let result = [];
+//   function helperRecursiveFunc(inputArr) {
+//     console.log(`checking recursive function`);
+//     if (inputArr.length === 0) {
+//       return;
+//     }
+//     if (inputArr[0] % 2 !== 0) {
+//       result.push(inputArr[0]);
+//     }
+//     helperRecursiveFunc(inputArr.slice(1));
+//   }
+//   helperRecursiveFunc(arr);
+//   return result;
+// }
+// const res = findOdd([2, 4, 5, 7, 6, 8, 58, 59]);
+// console.log("result", res);
