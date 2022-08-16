@@ -356,5 +356,5 @@ function findOdd(arr) {
   helperRecursiveFunc(arr);
   return result;
 }
-const res = findOdd([1, 3, 5, 7, 9]);
+const res = findOdd([2, 4, 5, 7, 6, 8, 58, 59]);
 console.log("result", res);
