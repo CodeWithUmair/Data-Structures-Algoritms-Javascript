@@ -345,6 +345,13 @@ function findOdd(arr) {
   let result = [];
   function helperRecursiveFunc(inputArr) {
     console.log(`checking recursive function`);
+    if (inputArr.length === 0) {
+      return;
+    }
+    if (inputArr[0] % 2 !== 0) {
+      result.push(inputArr[0]);
+    }
+    helperRecursiveFunc(inputArr.slice(1));
   }
   helperRecursiveFunc(arr);
   return result;
