@@ -358,3 +358,19 @@ num%2!==0
 // }
 // const res = findOdd([2, 4, 5, 7, 6, 8, 58, 59]);
 // console.log("result", res);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Linear Search Algorithms
+
+const users = [
+  { username: "Umair", email: "mumair0867@gmail.com" },
+  { username: "Quincy", email: "quincy@gmail.com" },
+  { username: "Zain", email: "zain123@gmail.com" },
+  { username: "Qamar", email: "qamartor@gmail.com" },
+];
+function isUserExit(arr, val) {
+  for (let item of arr) {
+    return true;
+  }
+  return false;
+}
