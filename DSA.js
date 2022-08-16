@@ -390,17 +390,17 @@ Bubble Sort (Sorting...)
 A Sort Algorithm where the largest value bubble at the top
 */
 
-function bubbleSort(arr) {
-  for (let i = arr.length; i > 0; i--) {
-    for (let j = 0; j < i; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-      }
-    }
-  }
-  return arr;
-}
-const res = bubbleSort([5, 1, 3, 5, 7, 8, 2, 6, 4, 54]);
-console.log("Result", res);
+// function bubbleSort(arr) {
+//   for (let i = arr.length; i > 0; i--) {
+//     for (let j = 0; j < i; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//       }
+//     }
+//   }
+//   return arr;
+// }
+// const res = bubbleSort([5, 1, 3, 5, 7, 8, 2, 6, 4, 54]);
+// console.log("Result", res);
 
 // time complexity quadratic O(n)square
