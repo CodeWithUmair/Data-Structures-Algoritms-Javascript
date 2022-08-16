@@ -360,21 +360,31 @@ num%2!==0
 // console.log("result", res);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Linear Search Algorithms
+/*
+Data Structures & Algoritms (DSA) - 9
 
-const users = [
-  { username: "Umair", email: "mumair0867@gmail.com" },
-  { username: "Quincy", email: "quincy@gmail.com" },
-  { username: "Zain", email: "zain123@gmail.com" },
-  { username: "Qamar", email: "qamartor@gmail.com" },
-];
-function isUserExit(arr, val) {
-  for (let item of arr) {
-    if (item["email"] === val) {
-      return true;
-    }
-  }
-  return false;
-}
-const res = isUserExit(users, "zain123@gmail.com");
-console.log("Result", res);
+Linear Search Algorithms
+*/
+
+// const users = [
+//   { username: "Umair", email: "mumair0867@gmail.com" },
+//   { username: "Quincy", email: "quincy@gmail.com" },
+//   { username: "Zain", email: "zain123@gmail.com" },
+//   { username: "Qamar", email: "qamartor@gmail.com" },
+// ];
+// function isUserExit(arr, val) {
+//   for (let item of arr) {
+//     if (item["email"] === val) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// const res = isUserExit(users, "zain123@gmail.com");
+// console.log("Result", res);
+
+/*
+Data Structures & Algoritms (DSA) - 10
+
+Bubble Sort (Sorting...)
+*/
