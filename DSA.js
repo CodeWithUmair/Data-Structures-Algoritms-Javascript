@@ -370,7 +370,11 @@ const users = [
 ];
 function isUserExit(arr, val) {
   for (let item of arr) {
-    return true;
+    if (item["email"] === val) {
+      return true;
+    }
   }
   return false;
 }
+const res = isUserExit(users, "zain123@gmail.com");
+console.log("Result", res);
