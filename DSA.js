@@ -421,7 +421,20 @@ Selection Sort (Sorting...)
 */
 
 function selectionSort(arr) {
-  for (let i = 0; i < arr.length; i++) {}
+  for (let i = 0; i < arr.length; i++) {
+    let min = i;
+    //   console.log(i);
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[min]) {
+        min = j;
+      }
+    }
+    if (i !== min) {
+      temp = arr[i];
+      arr[i] = arr[min];
+      arr[min] = temp;
+    }
+  }
   return arr;
 }
 const res = selectionSort([1, 5, 8, 6, 2, 4, 3, 7]);
