@@ -450,12 +450,20 @@ Insertion Sort (Sorting...)
 2. arr[j] > curr - swapping perfommed here
 */
 
-// function insertionSort(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//   }
-//   return arr;
-// } 7
-// const res = insertionSort([5, 1, 4, 2, 3, 9, 8, 6, 7]);
-// console.log("Result", res);
+function insertionSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let curr = arr[i];
+    let j = i - 1;
+    while (j >= 0 && arr[j] > curr) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    arr[j + 1] = curr;
+  }
+  return arr;
+}
+7;
+const res = insertionSort([5, 1, 4, 2, 3, 9, 8, 6, 7]);
+console.log("Result => ", res);
 
 // time complexity quadratic O(n)square
