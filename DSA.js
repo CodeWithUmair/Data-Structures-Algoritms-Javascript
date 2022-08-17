@@ -361,7 +361,7 @@ num%2!==0
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-Data Structures & Algoritms (DSA) - 9
+Data Structures & Algoritms (DSA) - 10
 
 Linear Search Algorithms
 */
@@ -384,7 +384,7 @@ Linear Search Algorithms
 // console.log("Result", res);
 
 /*
-Data Structures & Algoritms (DSA) - 10
+Data Structures & Algoritms (DSA) - 11
 
 Bubble Sort (Sorting...)
 A Sort Algorithm where the largest value bubble at the top
@@ -414,30 +414,59 @@ A Sort Algorithm where the largest value bubble at the top
 // time complexity quadratic O(n)square
 
 /*
-Data Structures & Algoritms (DSA) - 11
+Data Structures & Algoritms (DSA) - 12
 
 Selection Sort (Sorting...)
 [1, 5, 8, 6, 2, 4, 3, 7] -> input
 */
 
-function selectionSort(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let min = i;
-    //   console.log(i);
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[min]) {
-        min = j;
-      }
-    }
-    if (i !== min) {
-      temp = arr[i];
-      arr[i] = arr[min];
-      arr[min] = temp;
-    }
-  }
-  return arr;
-}
-const res = selectionSort([1, 5, 8, 6, 2, 4, 3, 7]);
-console.log("Result", res);
+// function selectionSort(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     let min = i;
+//     console.log(i);
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[j] < arr[min]) {
+//         min = j;
+//       }
+//     }
+//     if (i !== min) {
+//       temp = arr[i];
+//       arr[i] = arr[min];
+//       arr[min] = temp;
+//     }
+//   }
+//   return arr;
+// }
+// const res = selectionSort([1, 5, 8, 6, 2, 4, 3, 7]);
+// console.log("Result", res);
+
+// time complexity quadratic O(n)square
+
+/*
+Data Structures & Algoritms (DSA) - 13
+
+Selection Sort (Sorting...)
+[1, 5, 8, 6, 2, 4, 3, 7] -> input
+*/
+
+// function selectionSort(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     let min = i;
+//     console.log(i);
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[j] < arr[min]) {
+//         min = j;
+//       }
+//     }
+//     if (i !== min) {
+//       temp = arr[i];
+//       arr[i] = arr[min];
+//       arr[min] = temp;
+//     }
+//   }
+//   return arr;
+// }
+// const res = selectionSort([1, 5, 8, 6, 2, 4, 3, 7]);
+// console.log("Result", res);
 
 // time complexity quadratic O(n)square
