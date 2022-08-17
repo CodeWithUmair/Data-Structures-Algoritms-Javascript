@@ -446,27 +446,16 @@ Selection Sort (Sorting...)
 Data Structures & Algoritms (DSA) - 13
 
 Insertion Sort (Sorting...)
-[1, 5, 8, 6, 2, 4, 3, 7] -> input
+1. Consider 2nd element, arr[1] Starts here
+2. arr[j] > curr - swapping perfommed here
 */
 
 // function insertionSort(arr) {
 //   for (let i = 0; i < arr.length; i++) {
-//     let min = i;
-//     console.log(i);
-//     for (let j = i + 1; j < arr.length; j++) {
-//       if (arr[j] < arr[min]) {
-//         min = j;
-//       }
-//     }
-//     if (i !== min) {
-//       temp = arr[i];
-//       arr[i] = arr[min];
-//       arr[min] = temp;
-//     }
 //   }
 //   return arr;
-// }
-// const res = insertionSort([1, 5, 8, 6, 2, 4, 3, 7]);
+// } 7
+// const res = insertionSort([5, 1, 4, 2, 3, 9, 8, 6, 7]);
 // console.log("Result", res);
 
 // time complexity quadratic O(n)square
