@@ -419,3 +419,12 @@ Data Structures & Algoritms (DSA) - 11
 Selection Sort (Sorting...)
 [1, 5, 8, 6, 2, 4, 3, 7] -> input
 */
+
+function selectionSort(arr) {
+  for (let i = 0; i < arr.length; i++) {}
+  return arr;
+}
+const res = selectionSort([1, 5, 8, 6, 2, 4, 3, 7]);
+console.log("Result", res);
+
+// time complexity quadratic O(n)square
