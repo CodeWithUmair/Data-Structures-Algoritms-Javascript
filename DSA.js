@@ -445,11 +445,11 @@ Selection Sort (Sorting...)
 /*
 Data Structures & Algoritms (DSA) - 13
 
-Selection Sort (Sorting...)
+Insertion Sort (Sorting...)
 [1, 5, 8, 6, 2, 4, 3, 7] -> input
 */
 
-// function selectionSort(arr) {
+// function insertionSort(arr) {
 //   for (let i = 0; i < arr.length; i++) {
 //     let min = i;
 //     console.log(i);
@@ -466,7 +466,7 @@ Selection Sort (Sorting...)
 //   }
 //   return arr;
 // }
-// const res = selectionSort([1, 5, 8, 6, 2, 4, 3, 7]);
+// const res = insertionSort([1, 5, 8, 6, 2, 4, 3, 7]);
 // console.log("Result", res);
 
 // time complexity quadratic O(n)square
