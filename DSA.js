@@ -411,7 +411,7 @@ A Sort Algorithm where the largest value bubble at the top
 // const res = bubbleSort([5, 1, 3, 5, 7, 8, 2, 6, 4, 54]);
 // console.log("Result", res);
 
-// time complexity quadratic O(n)square
+// time complexity quadratic O(n) square
 
 /*
 Data Structures & Algoritms (DSA) - 12
@@ -440,7 +440,7 @@ Selection Sort (Sorting...)
 // const res = selectionSort([1, 5, 8, 6, 2, 4, 3, 7]);
 // console.log("Result", res);
 
-// time complexity quadratic O(n)square
+// time complexity quadratic O(n) square
 
 /*
 Data Structures & Algoritms (DSA) - 13
@@ -466,4 +466,4 @@ Insertion Sort (Sorting...)
 // const res = insertionSort([5, 1, 4, 2, 3, 9, 8, 6, 7]);
 // console.log("Result => ", res);
 
-// time complexity quadratic O(n)square
+// time complexity quadratic O(n) square
