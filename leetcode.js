@@ -33,20 +33,52 @@
  * @param {number[]} nums
  * @return {number}
  */
+// var removeDuplicates = function(nums) {
+//     if(nums.length === 0 ) return 0;
+
+//     let pointer = 0;
+
+//     for(let i=1; i<nums.length; i++) {
+//         if(nums[pointer] !== nums[i]) {
+//             pointer++;
+//             nums[pointer] = nums[i];
+//         }
+//     }
+    
+//     return pointer + 1;
+// };
+
+// const res = removeDuplicates([1,1,2]);
+// console.log("🚀 ~ file: leetcode.js:26 ~ res:", res);
+
+/**
+    80. Remove Duplicates from Sorted Array II
+*/
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 var removeDuplicates = function(nums) {
-    if(nums.length === 0 ) return 0;
+    if(nums.length <= 2 ) return nums.length;
 
-    let pointer = 0;
+    let count = 1;
+    let slow = 1;
 
-    for(let i=1; i<nums.length; i++) {
-        if(nums[pointer] !== nums[i]) {
-            pointer++;
-            nums[pointer] = nums[i];
+    for(let fast=1; fast<nums.length; fast++) {
+        if(nums[fast] === nums[fast - 1]) {
+            count++;
+        } else {
+            count = 1;
+        }
+
+        if(count <= 2) {
+            nums[slow] = nums[fast];
+            slow++;
         }
     }
     
-    return pointer + 1;
+    return slow;
 };
 
-const res = removeDuplicates([1,1,2]);
-console.log("🚀 ~ file: leetcode.js:26 ~ res:", res);
+const res = removeDuplicates([1,1,1,2,2,3]);
+console.log("🚀 ~ file: leetcode.js:78 ~ res:", res);
