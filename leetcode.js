@@ -44,7 +44,7 @@
 //             nums[pointer] = nums[i];
 //         }
 //     }
-    
+
 //     return pointer + 1;
 // };
 
@@ -58,27 +58,54 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function(nums) {
-    if(nums.length <= 2 ) return nums.length;
+// var removeDuplicates = function(nums) {
+//     if(nums.length <= 2 ) return nums.length;
 
-    let count = 1;
-    let slow = 1;
+//     let count = 1;
+//     let slow = 1;
 
-    for(let fast=1; fast<nums.length; fast++) {
-        if(nums[fast] === nums[fast - 1]) {
-            count++;
-        } else {
-            count = 1;
-        }
+//     for(let fast=1; fast<nums.length; fast++) {
+//         if(nums[fast] === nums[fast - 1]) {
+//             count++;
+//         } else {
+//             count = 1;
+//         }
 
-        if(count <= 2) {
-            nums[slow] = nums[fast];
-            slow++;
-        }
-    }
-    
-    return slow;
+//         if(count <= 2) {
+//             nums[slow] = nums[fast];
+//             slow++;
+//         }
+//     }
+
+//     return slow;
+// };
+
+// const res = removeDuplicates([1,1,1,2,2,3]);
+// console.log("🚀 ~ file: leetcode.js:78 ~ res:", res);
+
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+var rotate = function (nums, k) {
+  k %= nums.length; // To handle cases where k is larger than the array length
+
+  // Reverse the whole array, then reverse the first k elements and the rest separately
+  reverse(nums, 0, nums.length - 1);
+  reverse(nums, 0, k - 1);
+  reverse(nums, k, nums.length - 1);
 };
 
-const res = removeDuplicates([1,1,1,2,2,3]);
-console.log("🚀 ~ file: leetcode.js:78 ~ res:", res);
+function reverse(arr, start, end) {
+  while (start < end) {
+    let temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+  }
+}
+
+const response = rotate([1, 2, 3, 4, 5, 6, 7], 3);
+console.log("🚀 ~ file: leetcode.js:99 ~ response:", response);
