@@ -38,7 +38,10 @@ class Queue {
     this.length--;
     return this;
   }
-  //isEmpty;
+  isEmpty() {
+    if (this.length === 0) return true;
+    else return false;
+  }
 }
 
 const myQueue = new Queue();
@@ -48,5 +51,9 @@ console.log(myQueue.enqueue("Matt"));
 console.log(myQueue.enqueue("Pavel"));
 console.log(myQueue.enqueue("Samir"));
 console.log(myQueue.peek());
+console.log(myQueue.isEmpty());
 console.log(myQueue.dequeue());
 console.log(myQueue.dequeue());
+console.log(myQueue.dequeue());
+console.log(myQueue.dequeue());
+console.log(myQueue.isEmpty());
