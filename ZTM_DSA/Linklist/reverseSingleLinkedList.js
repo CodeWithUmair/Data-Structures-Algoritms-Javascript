@@ -5,7 +5,7 @@ class Node {
   }
 }
 
-class SingleLinkedList {
+class ReverseLinkedList {
   constructor(value) {
     this.head = {
       value: value,
@@ -92,12 +92,12 @@ class SingleLinkedList {
   }
 }
 
-let myLinkedList = new SingleLinkedList(2);
+let myLinkedList = new ReverseLinkedList(2);
 myLinkedList.append(3);
 myLinkedList.append(4);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
 myLinkedList.insert(20, 88);
-// myLinkedList.remove(2);
-myLinkedList.reverse();
+myLinkedList.remove(2);
+// myLinkedList.reverse();
 console.log(myLinkedList.printList());
